@@ -1,0 +1,254 @@
+[
+  {
+    "id": "zip-zap-zop",
+    "titre": "Zip Zap Zop",
+    "objectif": "Développer la concentration, la réactivité et la cohésion de groupe par un jeu de rythme et d'attention.",
+    "description": "Les joueurs forment un cercle. L'un d'eux envoie une impulsion à un autre joueur avec le mot 'Zip' accompagné d'un geste de la main dirigé vers lui. Le receveur envoie à son tour à quelqu'un d'autre avec 'Zap', puis la séquence continue avec 'Zop'. On reprend ensuite avec 'Zip'. Le contact visuel est essentiel. Un joueur qui reçoit une impulsion au mauvais moment, dit le mauvais mot ou ne réagit pas est éliminé ou doit exécuter un gage selon la version choisie.",
+    "nombreJoueurs": { "min": 6, "max": 20 },
+    "duree": 10,
+    "niveau": "débutant",
+    "categorie": "échauffement",
+    "tags": ["cercle", "rythme", "concentration", "réactivité", "contact visuel"],
+    "variantes": [
+      "Accélérer progressivement le rythme jusqu'à l'explosion",
+      "Ajouter des sons et gestes supplémentaires (Boing pour rebondir, Zoom pour traverser le cercle)",
+      "Jouer en silence avec seulement le geste"
+    ],
+    "conseils": [
+      "Insister sur le contact visuel avant d'envoyer l'impulsion",
+      "Commencer lentement pour bien établir le pattern",
+      "Encourager des gestes francs et décidés"
+    ]
+  },
+  {
+    "id": "le-miroir",
+    "titre": "Le Miroir",
+    "objectif": "Développer l'écoute corporelle et la synchronisation avec son partenaire sans chercher à dominer.",
+    "description": "Les joueurs se placent par paires, face à face, à environ un mètre de distance. L'un est le 'miroir', l'autre initie des mouvements lents et continus. Le miroir reproduit les mouvements avec le plus de précision et de synchronisation possible. L'exercice évolue vers une deuxième phase où il n'y a plus de leader désigné : les deux joueurs partagent l'initiative de façon fluide et indistincte. L'objectif est d'atteindre un état de co-présence totale où personne ne mène vraiment.",
+    "nombreJoueurs": { "min": 2, "max": null },
+    "duree": 15,
+    "niveau": "débutant",
+    "categorie": "écoute",
+    "tags": ["corps", "synchronisation", "écoute", "partenaire", "paire"],
+    "variantes": [
+      "Faire le miroir en marchant dans l'espace",
+      "Introduire une musique de fond pour guider le rythme",
+      "Travailler en trio : deux miroirs pour un initiateur"
+    ],
+    "conseils": [
+      "Rappeler que l'objectif n'est pas d'être parfait mais d'être attentif",
+      "Encourager les mouvements lents au départ pour faciliter la synchronisation",
+      "Inviter les joueurs à travailler le regard périphérique plutôt que de fixer un seul point"
+    ]
+  },
+  {
+    "id": "oui-et",
+    "titre": "Oui Et...",
+    "objectif": "Intégrer le principe d'acceptance en pratiquant le 'oui et...' de façon consciente et systématique.",
+    "description": "Par paires, les joueurs construisent une scène ou un dialogue en appliquant strictement la règle du 'oui et...'. Chaque réplique doit commencer par accepter explicitement ce que l'autre vient de dire (oui) et y ajouter une nouvelle information ou une progression (et...). Dans un premier temps, l'animateur peut demander aux joueurs de commencer littéralement leurs phrases par 'Oui, et...' pour bien ancrer le réflexe. Ensuite, l'exercice devient plus naturel.",
+    "nombreJoueurs": { "min": 2, "max": 12 },
+    "duree": 15,
+    "niveau": "débutant",
+    "categorie": "écoute",
+    "tags": ["acceptance", "fondamental", "dialogue", "co-construction", "paire"],
+    "variantes": [
+      "Comparer avec une version 'Oui mais...' pour sentir la différence",
+      "Faire l'exercice en groupe : chaque joueur ajoute un élément à une histoire commune",
+      "Contraindre les joueurs à accepter des propositions de plus en plus absurdes"
+    ],
+    "conseils": [
+      "Débriefter sur le ressenti : accepter est-il difficile ? Pourquoi ?",
+      "Souligner que 'oui' concerne le comédien, pas forcément le personnage",
+      "Éviter les 'oui et...' vides qui n'apportent rien de nouveau"
+    ]
+  },
+  {
+    "id": "la-machine",
+    "titre": "La Machine",
+    "objectif": "Développer la créativité collective, le rythme et l'écoute du groupe dans une construction physique et sonore commune.",
+    "description": "Un premier joueur entre au centre de l'espace et commence un mouvement répétitif accompagné d'un son rythmique. Un second joueur vient se connecter physiquement et sonorément à lui, en créant un mouvement complémentaire. Les autres joueurs s'ajoutent un à un pour former une 'machine' vivante, cohérente et rhythmée. Chaque partie doit s'intégrer dans l'ensemble. L'animateur peut ensuite donner des instructions : accélérer, ralentir, la machine chauffe, la machine tombe en panne...",
+    "nombreJoueurs": { "min": 5, "max": 20 },
+    "duree": 15,
+    "niveau": "débutant",
+    "categorie": "échauffement",
+    "tags": ["corps", "son", "rythme", "groupe", "créativité"],
+    "variantes": [
+      "Donner un thème à la machine (machine à bonheur, machine à excuses, machine à remonter le temps)",
+      "Demander au groupe d'identifier à quoi sert la machine après la construction",
+      "Faire deux machines et les fusionner"
+    ],
+    "conseils": [
+      "Encourager des connexions physiques réelles (main sur épaule, pied qui touche pied)",
+      "Rappeler que la machine doit rester cohérente visuellement",
+      "L'animateur peut participer pour montrer l'exemple"
+    ]
+  },
+  {
+    "id": "le-sculpteur",
+    "titre": "Le Sculpteur",
+    "objectif": "Explorer la communication non-verbale, la confiance et la conscience corporelle.",
+    "description": "Par paires, un joueur est le 'sculpteur' et l'autre est la 'argile'. Le sculpteur peut manipuler doucement le corps de son partenaire pour le placer dans une position précise. L'argile est passive et se laisse guider. Une fois la sculpture terminée, le sculpteur doit donner un titre à son œuvre. On inverse ensuite les rôles. Dans une deuxième phase, les sculptures peuvent prendre vie et commencer à se déplacer ou à interagir.",
+    "nombreJoueurs": { "min": 2, "max": null },
+    "duree": 20,
+    "niveau": "débutant",
+    "categorie": "personnage",
+    "tags": ["corps", "confiance", "non-verbal", "paire", "posture"],
+    "variantes": [
+      "Sculpter à distance sans toucher, uniquement par démonstration",
+      "Le sculpteur crée une émotion que l'argile doit deviner",
+      "Plusieurs sculpteurs travaillent simultanément sur une argile pour créer une sculpture collective"
+    ],
+    "conseils": [
+      "Insister sur le respect du confort physique de chacun",
+      "Encourager des positions inhabituelles et non-quotidiennes",
+      "Demander aux sculpteurs de prendre le temps d'observer leur œuvre avant de lui donner un titre"
+    ]
+  },
+  {
+    "id": "histoire-a-relais",
+    "titre": "Histoire à Relais",
+    "objectif": "Travailler la co-narration, l'écoute active et la construction narrative collective.",
+    "description": "En cercle, le groupe construit une histoire collective en se passant le fil narratif. Chaque joueur peut ajouter une phrase ou un paragraphe avant de passer la parole au suivant. L'animateur peut signaler le passage par un signal (clap, mot-clé) ou laisser les joueurs décider eux-mêmes du moment de passer. L'objectif est de construire une histoire cohérente avec un début, un développement et une fin.",
+    "nombreJoueurs": { "min": 4, "max": 15 },
+    "duree": 20,
+    "niveau": "débutant",
+    "categorie": "narration",
+    "tags": ["narration", "cercle", "groupe", "histoire", "co-construction"],
+    "variantes": [
+      "Imposer un genre narratif (conte, thriller, romance, science-fiction)",
+      "Jouer en 'mot à mot' : chaque joueur n'ajoute qu'un seul mot",
+      "Introduire des contraintes narratives (le héros doit faire face à un obstacle impossible)"
+    ],
+    "conseils": [
+      "Rappeler qu'il faut écouter entièrement ce que l'autre dit avant de répondre",
+      "Encourager les joueurs à 'tomber vers la fin' plutôt que de prolonger indéfiniment",
+      "Éviter de trop planifier sa contribution à l'avance"
+    ]
+  },
+  {
+    "id": "freeze-tag",
+    "titre": "Freeze Tag",
+    "objectif": "Pratiquer le freeze, développer la capacité à créer rapidement de nouvelles scènes à partir de positions physiques données.",
+    "description": "Deux joueurs commencent une scène. À tout moment, n'importe quel joueur hors scène peut crier 'Freeze !'. Les deux joueurs sur scène se figent immédiatement dans leur position. Le joueur qui a crié vient tapoter l'épaule d'un des deux joueurs pour le remplacer. Il prend exactement la même position corporelle que le joueur qu'il remplace et initie une toute nouvelle scène justifiant cette position. La scène précédente est abandonnée.",
+    "nombreJoueurs": { "min": 4, "max": 15 },
+    "duree": 20,
+    "niveau": "intermédiaire",
+    "categorie": "échauffement",
+    "tags": ["freeze", "scène", "physique", "créativité", "réactivité"],
+    "variantes": [
+      "Forcer les joueurs extérieurs à freezer toutes les 30 secondes",
+      "Limiter les nouvelles scènes à un univers donné (western, science-fiction...)",
+      "Demander au public de décider qui est remplacé"
+    ],
+    "conseils": [
+      "Encourager les joueurs à créer des positions physiques intéressantes et variées",
+      "Rappeler que la nouvelle scène doit vraiment être différente, pas juste une continuation",
+      "Les joueurs hors scène doivent rester actifs et chercher le bon moment pour freezer"
+    ]
+  },
+  {
+    "id": "le-banc-public",
+    "titre": "Le Banc Public",
+    "objectif": "Développer la création de personnages contrastés et l'art de la rencontre entre deux univers différents.",
+    "description": "Un joueur est assis sur un banc (une chaise représente le banc). Un second joueur arrive et s'installe. Ils jouent la rencontre entre leurs deux personnages. Au bout d'un moment (signal de l'animateur ou au jugé), un des deux joueurs part et un troisième arrive, apportant un nouveau contraste. L'exercice met l'accent sur la création rapide d'un personnage clair et sur sa réaction authentique face à l'autre.",
+    "nombreJoueurs": { "min": 4, "max": null },
+    "duree": 25,
+    "niveau": "intermédiaire",
+    "categorie": "personnage",
+    "tags": ["personnage", "duo", "rencontre", "contraste", "scène"],
+    "variantes": [
+      "Imposer des statuts : un toujours haut, l'autre toujours bas",
+      "Donner un thème émotionnel à chaque nouveau personnage qui arrive",
+      "Jouer en silence : toute la communication est corporelle"
+    ],
+    "conseils": [
+      "Encourager les personnages très différents des joueurs eux-mêmes",
+      "Rappeler l'importance d'écouter l'autre avant de réagir",
+      "La richesse de l'exercice vient du contraste : deux personnages similaires génèrent moins d'intérêt"
+    ]
+  },
+  {
+    "id": "l-alphabet",
+    "titre": "L'Alphabet",
+    "objectif": "Travailler la contrainte formelle tout en maintenant la cohérence et la fluidité d'une scène.",
+    "description": "Deux joueurs jouent une scène dont le thème est imposé. La contrainte : chaque réplique doit commencer par la lettre suivante de l'alphabet, en ordre. La première réplique commence par A, la deuxième par B, et ainsi de suite jusqu'à Z. Si les joueurs perdent le fil ou font une erreur, ils peuvent recommencer ou continuer selon les règles de l'animateur.",
+    "nombreJoueurs": { "min": 2, "max": 4 },
+    "duree": 15,
+    "niveau": "intermédiaire",
+    "categorie": "narration",
+    "tags": ["contrainte", "duo", "langue", "concentration", "lettres"],
+    "variantes": [
+      "Jouer en ordre inverse (Z vers A)",
+      "Utiliser l'alphabet en dix lettres seulement pour une version plus rapide",
+      "Chaque réplique doit commencer ET finir par la même lettre"
+    ],
+    "conseils": [
+      "Choisir un thème de scène clair pour que les joueurs aient moins de décisions à prendre",
+      "Rappeler que la qualité de jeu est plus importante que la perfectcion de la contrainte",
+      "Ne pas permettre les hésitations trop longues : pénaliser ou passer"
+    ]
+  },
+  {
+    "id": "le-guide-d-aveugle",
+    "titre": "Le Guide d'Aveugle",
+    "objectif": "Développer la confiance, la communication non-verbale et la responsabilité envers son partenaire.",
+    "description": "Par paires, un joueur ferme les yeux (ou porte un bandeau). L'autre le guide dans l'espace en utilisant uniquement un contact physique doux sur les épaules, le dos ou les bras — sans paroles. L'aveugle doit se laisser guider en toute confiance. L'exercice explore différentes qualités de guidage : rapide, lent, doux, précis, exploratoire. Après quelques minutes, les rôles s'inversent.",
+    "nombreJoueurs": { "min": 2, "max": null },
+    "duree": 20,
+    "niveau": "débutant",
+    "categorie": "écoute",
+    "tags": ["confiance", "corps", "non-verbal", "paire", "espace"],
+    "variantes": [
+      "Guide sonore : guider uniquement par des sons (clic, sifflement, voix douce)",
+      "Créer un parcours d'obstacles que le guide doit faire traverser à l'aveugle",
+      "Groupes de trois : un aveugle, deux guides"
+    ],
+    "conseils": [
+      "Insister sur la sécurité : les guides sont responsables de leurs partenaires",
+      "Commencer dans un espace dégagé avant d'introduire des obstacles",
+      "Débriefter sur les sensations des deux rôles : lequel était le plus difficile ?"
+    ]
+  },
+  {
+    "id": "l-interview",
+    "titre": "L'Interview",
+    "objectif": "Développer la construction de personnages riches et cohérents, et la capacité à improviser une biographie complète.",
+    "description": "Un joueur entre en scène avec un personnage clairement défini (ou qui se définit au fil de l'exercice). Un ou plusieurs autres joueurs jouent le rôle de journalistes ou d'intervieweurs. Ils posent des questions au personnage sur sa vie, son métier, ses opinions, ses habitudes. Le joueur doit répondre en restant cohérent avec son personnage, en le développant et en ne bloquant jamais.",
+    "nombreJoueurs": { "min": 2, "max": 6 },
+    "duree": 20,
+    "niveau": "intermédiaire",
+    "categorie": "personnage",
+    "tags": ["personnage", "biographie", "dialogue", "cohérence", "profondeur"],
+    "variantes": [
+      "Donner un personnage absurde ou extrême pour forcer la créativité",
+      "Passer plusieurs interviewés en chaîne avec des personnages contrastés",
+      "Les intervieweurs cherchent à déstabiliser le personnage"
+    ],
+    "conseils": [
+      "Encourager le joueur interviewé à prendre des décisions rapides et à les assumer",
+      "Les questions doivent être ouvertes pour laisser de l'espace au joueur",
+      "Rappeler qu'une contradiction dans le personnage n'est pas un échec : elle peut enrichir"
+    ]
+  },
+  {
+    "id": "le-cercle-des-emotions",
+    "titre": "Le Cercle des Émotions",
+    "objectif": "Explorer le spectre émotionnel, ancrer les émotions dans le corps et développer la transformation rapide.",
+    "description": "Les joueurs se placent en cercle. L'animateur nomme une émotion et tous les joueurs doivent l'incarner simultanément dans leur corps, leur visage et leur voix, sans partenaire particulier. L'animateur peut changer l'émotion rapidement, créant des transitions abruptes. Dans une deuxième phase, les joueurs circulent dans l'espace et interagissent brièvement avec ceux qu'ils croisent en portant l'émotion du moment.",
+    "nombreJoueurs": { "min": 5, "max": null },
+    "duree": 15,
+    "niveau": "débutant",
+    "categorie": "personnage",
+    "tags": ["émotion", "corps", "échauffement", "transformation", "groupe"],
+    "variantes": [
+      "Chaque joueur tire une émotion au sort dans un chapeau et joue une scène courte",
+      "Jouer avec des émotions contradictoires (joie + honte simultanément)",
+      "L'émotion est chuchotée uniquement à un joueur qui doit la communiquer aux autres sans parler"
+    ],
+    "conseils": [
+      "Encourager les émotions dans tout le corps, pas seulement le visage",
+      "Proposer des émotions nuancées au-delà des quatre émotions de base (frustration, nostalgie, fierté...)",
+      "Rappeler qu'il n'y a pas de bonne ou mauvaise façon d'incarner une émotion"
+    ]
+  }
+]

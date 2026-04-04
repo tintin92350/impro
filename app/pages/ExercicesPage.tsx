@@ -1,0 +1,140 @@
+import { useSearchParams } from "react-router";
+import { useContent } from "~/hooks/useContent";
+import { filterExercices } from "~/utils/search";
+import SearchBar from "~/components/SearchBar";
+import Tag from "~/components/Tag";
+import ExerciceCard from "~/components/ExerciceCard";
+
+const NIVEAUX = ["débutant", "intermédiaire", "avancé"] as const;
+const CATEGORIES = ["échauffement", "écoute", "narration", "personnage", "espace"] as const;
+
+export default function ExercicesPage() {
+  const [searchParams, setSearchParams] = useSearchParams();
+  const { exercices, loading, error } = useContent();
+
+  const query = searchParams.get("q") ?? "";
+  const niveau = searchParams.get("niveau") ?? "";
+  const categorie = searchParams.get("categorie") ?? "";
+
+  const filtered = filterExercices(exercices, query, {
+    niveau: niveau || undefined,
+    categorie: categorie || undefined,
+  });
+
+  function setParam(key: string, value: string, current: string) {
+    setSearchParams((prev) => {
+      const next = new URLSearchParams(prev);
+      if (value && value !== current) {
+        next.set(key, value);
+      } else {
+        next.delete(key);
+      }
+      return next;
+    });
+  }
+
+  function setQuery(value: string) {
+    setSearchParams((prev) => {
+      const next = new URLSearchParams(prev);
+      if (value) {
+        next.set("q", value);
+      } else {
+        next.delete("q");
+      }
+      return next;
+    });
+  }
+
+  return (
+    <div className="min-h-screen bg-swiss-50">
+      <div className="max-w-5xl mx-auto px-6 py-12">
+        {/* Header */}
+        <div className="mb-10 animate-fade-in">
+          <h1 className="font-display text-4xl md:text-5xl font-bold text-gray-900 mb-3">
+            Exercices
+          </h1>
+          <p className="font-body text-gray-500 text-lg">
+            Des exercices pour tous les niveaux et toutes les envies.
+          </p>
+        </div>
+
+        {/* Filters */}
+        <div className="flex flex-col gap-4 mb-8 animate-fade-in stagger-1">
+          <SearchBar
+            value={query}
+            onChange={setQuery}
+            placeholder="Rechercher un exercice..."
+          />
+
+          <div className="flex flex-col gap-3">
+            {/* Niveau */}
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="font-body text-xs text-gray-400 uppercase tracking-wide w-16 shrink-0">
+                Niveau
+              </span>
+              {NIVEAUX.map((n) => (
+                <Tag
+                  key={n}
+                  label={n}
+                  active={niveau === n}
+                  onClick={() => setParam("niveau", n, niveau)}
+                />
+              ))}
+            </div>
+
+            {/* Catégorie */}
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="font-body text-xs text-gray-400 uppercase tracking-wide w-16 shrink-0">
+                Type
+              </span>
+              {CATEGORIES.map((cat) => (
+                <Tag
+                  key={cat}
+                  label={cat}
+                  active={categorie === cat}
+                  onClick={() => setParam("categorie", cat, categorie)}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Count */}
+        {!loading && (
+          <p className="font-body text-sm text-gray-400 mb-6 animate-fade-in stagger-2">
+            {filtered.length} exercice{filtered.length !== 1 ? "s" : ""}
+            {(query || niveau || categorie) ? " trouvé" + (filtered.length !== 1 ? "s" : "") : ""}
+          </p>
+        )}
+
+        {/* States */}
+        {loading && (
+          <div className="flex justify-center items-center py-24">
+            <div className="w-10 h-10 rounded-full border-4 border-swiss-400/20 border-t-swiss-400 animate-spin" />
+          </div>
+        )}
+
+        {error && !loading && (
+          <div className="rounded-xl bg-red-50 border border-red-100 p-6 text-red-700 font-body text-sm">
+            Une erreur est survenue : {error}
+          </div>
+        )}
+
+        {!loading && !error && filtered.length === 0 && (
+          <div className="text-center py-24 font-body text-gray-400">
+            <p className="text-5xl mb-4">🎭</p>
+            <p className="text-lg">Aucun exercice ne correspond à votre recherche.</p>
+          </div>
+        )}
+
+        {!loading && !error && filtered.length > 0 && (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 animate-fade-in-up stagger-2">
+            {filtered.map((exercice) => (
+              <ExerciceCard key={exercice.id} exercice={exercice} />
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "le-freeze",
+    "titre": "Le Freeze",
+    "description": "Technique fondamentale qui permet d'arrêter l'action en cours et d'introduire une nouvelle direction ou un nouveau personnage.",
+    "contenu": "Le freeze est une des techniques les plus connues de l'improvisation théâtrale. Il consiste à stopper net l'action en scène, comme si on appuyait sur pause. Cette interruption peut être demandée par un joueur extérieur ou par un arbitre.\n\nLors d'un freeze, l'improvisateur qui entre en scène doit partir de la position exacte dans laquelle se trouvait le joueur qu'il remplace. Il doit ensuite construire une toute nouvelle scène en justifiant cette position par un contexte radicalement différent.\n\nLe freeze est à la fois un exercice d'observation (repérer les postures intéressantes), d'imagination (trouver une nouvelle justification) et de courage (oser prendre la scène). C'est aussi un excellent outil pour relancer une scène qui s'essouffle.\n\nEn match d'impro, le freeze peut être utilisé comme mécanisme de remplacement des joueurs au fil d'une scène.",
+    "categorie": "technique",
+    "tags": ["base", "intermédiaire", "scène", "physique", "position"]
+  },
+  {
+    "id": "le-cercle",
+    "titre": "Le Cercle",
+    "description": "Formation d'échauffement et de cohésion de groupe incontournable pour débuter une session d'improvisation.",
+    "contenu": "Le cercle est bien plus qu'une simple disposition spatiale : c'est un rituel fondateur de la pratique de l'improvisation. En se plaçant en cercle, les joueurs affirment l'égalité de chacun, l'absence de hiérarchie, et la disponibilité à recevoir et donner de l'énergie.\n\nLe cercle est utilisé pour les échauffements collectifs (Zip Zap Zop, la machine, les rythmes), pour les débriefings, pour les partages de feedback. Il symbolise l'écoute circulaire : chacun voit tout le monde, chacun est vu.\n\nEn improvisation, travailler en cercle développe la conscience du groupe, la perception périphérique et la capacité à maintenir l'attention sur l'ensemble et non sur un seul point. C'est aussi un espace sécurisant pour les débutants.\n\nDans la tradition du théâtre-sport et du match d'impro québécois, le cercle est souvent le lieu de rassemblement avant et après chaque prestation.",
+    "categorie": "concept",
+    "tags": ["base", "débutant", "groupe", "échauffement", "cohésion"]
+  },
+  {
+    "id": "l-ecoute",
+    "titre": "L'Écoute",
+    "description": "Pilier de l'improvisation : la capacité à recevoir pleinement ce que l'autre offre avant de répondre.",
+    "contenu": "L'écoute est sans doute la compétence la plus fondamentale de l'improvisateur. Elle dépasse la simple audition des mots : il s'agit d'être attentif au corps, aux intentions, aux silences, aux émotions de son partenaire.\n\nUn improvisateur qui n'écoute pas impose sa propre vision de la scène sans tenir compte de ce que construit l'autre. Il en résulte une scène désordonnée, sans logique partagée. À l'inverse, une vraie écoute permet de co-construire une réalité cohérente et surprenante.\n\nL'écoute active en improvisation implique d'accepter les propositions de l'autre, de les intégrer et de les enrichir. C'est la base du principe du 'oui et...'. Elle demande aussi de savoir se taire et de laisser de l'espace à l'autre.\n\nOn développe l'écoute par des exercices comme le miroir, le guide d'aveugle, ou encore les histoires à relais. C'est une pratique continue, qui s'améliore tout au long du parcours d'un improvisateur.",
+    "categorie": "concept",
+    "tags": ["base", "débutant", "fondamental", "communication", "partenaire"]
+  },
+  {
+    "id": "le-statut",
+    "titre": "Le Statut",
+    "description": "Concept clé pour créer des dynamiques de personnage : tout personnage occupe une position haute ou basse dans une relation.",
+    "contenu": "Le statut est un concept développé notamment par Keith Johnstone dans son ouvrage 'Impro'. Il désigne la position relative qu'occupe un personnage dans une relation avec un autre. Le statut n'est pas fixe : il se joue, se négocie, se prend et se perd au fil de la scène.\n\nUn joueur à haut statut prend de l'espace, parle lentement, regarde l'autre dans les yeux, ne s'excuse pas. Un joueur à bas statut se rétrécit, cherche l'approbation, évite le regard direct, s'excuse souvent.\n\nCe qui rend le statut si puissant sur scène, c'est son instabilité. Les renversements de statut créent des moments de comédie ou de drame. Une scène où les statuts ne changent pas devient vite monotone.\n\nTravailler le statut aide les improvisateurs à sortir de leurs habitudes corporelles et émotionnelles. Beaucoup de comédiens ont un statut de confort qu'ils reproduisent inconsciemment. Jouer avec le statut débloque une grande variété de personnages et d'interactions.",
+    "categorie": "concept",
+    "tags": ["intermédiaire", "personnage", "relation", "Johnstone", "corps"]
+  },
+  {
+    "id": "la-construction-narrative",
+    "titre": "La Construction Narrative",
+    "description": "Art de bâtir une histoire cohérente en improvisation, avec un début, un milieu et une fin.",
+    "contenu": "La construction narrative est l'un des défis les plus complexes de l'improvisation. Contrairement au théâtre classique, l'improvisateur doit créer simultanément l'auteur, le personnage et le comédien.\n\nUne bonne narration improvisée repose sur quelques piliers : l'établissement rapide du contexte (qui, quoi, où), l'introduction d'un conflit ou d'une tension, le développement de cette tension, et une résolution satisfaisante.\n\nLes modèles narratifs classiques (le voyage du héros, la structure en trois actes) sont des outils utiles, mais l'improvisateur doit les intégrer intuitivement pour ne pas alourdir sa pensée. L'important est d'avoir des outils pour 'tomber vers la fin' de façon organique.\n\nEn improvisation longue (Harold, forme narrative), la construction narrative prend une dimension encore plus complexe, avec des thèmes récurrents, des personnages qui évoluent et des fils narratifs qui se rejoignent. En match d'impro, la durée limitée impose une économie narrative particulière.",
+    "categorie": "concept",
+    "tags": ["intermédiaire", "avancé", "narration", "histoire", "structure"]
+  },
+  {
+    "id": "le-match-d-impro",
+    "titre": "Le Match d'Impro",
+    "description": "Format compétitif québécois opposant deux équipes de joueurs qui s'affrontent en improvisant des scènes soumises au vote du public.",
+    "contenu": "Le match d'improvisation est né au Québec dans les années 1970, sous l'impulsion de Robert Lepage et de la Ligue Nationale d'Improvisation (LNI). Il s'inspire des codes du hockey sur glace : une patinoire (ou son équivalent scénique), des arbitres, des pénalités, un chronomètre et deux équipes qui s'affrontent.\n\nChaque match se compose de plusieurs catégories de joutes, tirées au sort : thème imposé, nombre de joueurs, durée, style (comparée ou non comparée, avec ou sans parole). À la fin de chaque joute, le public vote pour l'équipe qu'il a préférée.\n\nLe format match a largement essaimé hors du Québec, notamment en Suisse romande où il existe de nombreuses ligues amateurs et professionnelles. Il a l'avantage de rendre l'improvisation accessible au grand public grâce à sa structure facilement compréhensible.\n\nLes critiques notent parfois que la dimension compétitive peut nuire à la prise de risque et à la qualité artistique. Certaines compagnies ont donc développé des formats hybrides, moins axés sur la compétition.",
+    "categorie": "format",
+    "tags": ["format", "compétition", "québec", "public", "équipe"]
+  },
+  {
+    "id": "le-theatresports",
+    "titre": "Le Théâtresports",
+    "description": "Format compétitif inventé par Keith Johnstone au Canada, ancêtre de nombreux formats d'impro contemporains.",
+    "contenu": "Le Théâtresports (ou TheatreSports) a été créé par le metteur en scène britannique Keith Johnstone à Calgary, en Alberta, dans les années 1970. Il est considéré comme l'un des formats fondateurs de l'improvisation compétitive moderne.\n\nDans le Théâtresports, deux équipes s'affrontent devant un public et un jury. Les équipes proposent des scènes qu'elles soumettent au jugement du jury, qui peut attribuer des points ou des cartons rouges en cas de mauvaise performance (manque de clarté, refus, jeu trop faible).\n\nContrairement au match d'impro québécois, le Théâtresports met davantage l'accent sur la qualité théâtrale que sur la popularité auprès du public. Le jury est censé évaluer le jeu avec des critères artistiques.\n\nL'influence de Johnstone dépasse ce seul format : ses livres 'Impro' et 'Impro for Storytellers' sont des références incontournables pour tout improvisateur sérieux. Ses concepts (statut, acceptation, blocage, narratif) ont structuré l'enseignement de l'improvisation dans le monde entier.",
+    "categorie": "format",
+    "tags": ["format", "Johnstone", "compétition", "jury", "canada"]
+  },
+  {
+    "id": "l-acceptance",
+    "titre": "L'Acceptance — le \"Oui et...\"",
+    "description": "Principe fondamental de l'improvisation : accepter la réalité proposée par son partenaire et la construire ensemble.",
+    "contenu": "Le 'oui et...' est la règle d'or de l'improvisation. Elle stipule que lorsqu'un partenaire fait une proposition — qu'elle soit verbale ou physique — l'autre doit l'accepter et la développer. C'est un engagement à co-construire plutôt qu'à imposer.\n\nDire 'non' en improvisation (bloquer) revient à détruire ce que l'autre a construit. Même un 'oui mais...' est une forme de résistance qui freine l'élan de la scène. Le 'oui et...' crée un mouvement en avant perpétuel.\n\nCela ne signifie pas que les personnages doivent être d'accord sur tout : un personnage peut dire 'non' à l'intérieur de la scène, mais le comédien, lui, accepte toujours la réalité que son partenaire a établie. C'est la distinction cruciale entre le personnage et l'acteur.\n\nL'acceptance s'applique aussi aux accidents de plateau, aux oublis, aux erreurs : tout ce qui se passe sur scène devient réalité et peut être intégré. Cette philosophie du 'oui' déborde souvent la pratique théâtrale et influence la manière dont les improvisateurs abordent la vie en général.",
+    "categorie": "regle",
+    "tags": ["base", "débutant", "fondamental", "règle", "partenaire"]
+  },
+  {
+    "id": "les-categories-en-impro",
+    "titre": "Les Catégories en Match d'Impro",
+    "description": "Les catégories définissent les contraintes de chaque joute en match : style, nombre de joueurs, thème et durée.",
+    "contenu": "En match d'improvisation, chaque joute est définie par une catégorie qui précise ses conditions de jeu. Ces catégories sont généralement tirées au sort par les capitaines d'équipe ou par l'arbitre.\n\nLes paramètres classiques d'une catégorie comprennent : le type (comparée ou non-comparée), le nombre de joueurs (solo, duo, trio, mixed, libre), le style dramatique (réaliste, burlesque, comédie musicale, mime, etc.), la durée (de 30 secondes à plusieurs minutes) et parfois des contraintes supplémentaires (sans parole, avec accessoire imposé, en alexandrins...).\n\nUne catégorie 'comparée' signifie que les deux équipes jouent le même thème successivement, puis le public vote. En 'non-comparée', une seule équipe joue et obtient automatiquement les points si le jury valide la performance.\n\nLa maîtrise des catégories est un savoir-faire à part entière du match d'impro. Chaque joueur doit savoir adapter son jeu en fonction des contraintes imposées, ce qui exige polyvalence et rapidité d'adaptation.",
+    "categorie": "regle",
+    "tags": ["match", "format", "règles", "catégorie", "compétition"]
+  },
+  {
+    "id": "la-chute",
+    "titre": "La Chute",
+    "description": "La fin d'une scène improvisée : art de conclure de façon satisfaisante et mémorable.",
+    "contenu": "La chute, en improvisation, désigne le moment où une scène se conclut. Bien finir est souvent plus difficile que bien commencer. Une mauvaise chute peut affaiblir rétrospectivement toute une scène de qualité.\n\nIl existe plusieurs types de chutes : la chute comique (le punchline final), la chute émotionnelle (le moment de vérité d'un personnage), la chute narrative (la résolution du conflit), et la chute image (un tableau final fort et silencieux).\n\nPour trouver la chute juste, l'improvisateur doit garder un fil narratif et émotionnel tout au long de la scène. La chute idéale est souvent celle qui réunit les différents éléments de la scène de façon inattendue mais logique — 'c'était évident, et pourtant je ne l'avais pas vu venir'.\n\nCertains formats utilisent des signaux extérieurs pour forcer la fin (buzzer, sifflet, lumières). Dans ce cas, l'improvisateur doit avoir le réflexe de 'tomber vers la fin' dès qu'il entend le signal, en concluant rapidement d'une façon cohérente avec ce qui a été joué.",
+    "categorie": "technique",
+    "tags": ["intermédiaire", "narration", "scène", "fin", "structure"]
+  }
+]
