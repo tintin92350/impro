@@ -1,0 +1,1 @@
+- [Simple mobile-first design](feedback_simple_mobile.md) — Keep UI minimal, mobile-adapted, no heavy decorative effects
