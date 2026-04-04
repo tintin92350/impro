@@ -12,14 +12,14 @@ export default function ExerciceDetailPage() {
   const { id } = useParams<{ id: string }>();
   const { exercices, loading } = useContent();
 
-  if (loading) return <p className="text-center py-12 text-text-secondary">Chargement…</p>;
+  if (loading) return <p className="text-center py-12 text-text-secondary text-lg">Chargement…</p>;
 
   const exercice = exercices.find((e) => e.id === id);
   if (!exercice) {
     return (
       <div className="text-center py-12">
-        <p className="text-text-secondary mb-4">Exercice introuvable.</p>
-        <Link to="/exercices" className="text-swiss-400 text-sm font-medium">← Retour aux exercices</Link>
+        <p className="text-text-secondary text-lg mb-4">Exercice introuvable.</p>
+        <Link to="/exercices" className="text-swiss-400 font-medium">← Retour aux exercices</Link>
       </div>
     );
   }
@@ -30,35 +30,37 @@ export default function ExerciceDetailPage() {
 
   return (
     <div>
-      <Link to="/exercices" className="text-swiss-400 text-sm font-medium">← Retour aux exercices</Link>
+      <Link to="/exercices" className="text-swiss-400 font-medium">← Retour aux exercices</Link>
 
-      <div className="mt-4">
-        <div className="flex flex-wrap gap-2 mb-2">
-          <span className={`rounded-full px-2 py-0.5 text-xs font-medium ${niveauColor[exercice.niveau] ?? "bg-gray-100 text-gray-600"}`}>
+      <div className="mt-5 bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+        <div className="flex flex-wrap gap-2 mb-3">
+          <span className={`rounded-full px-3 py-1 text-sm font-medium ${niveauColor[exercice.niveau] ?? "bg-gray-100 text-gray-600"}`}>
             {exercice.niveau}
           </span>
           <Tag label={exercice.categorie} />
         </div>
 
-        <h1 className="font-display text-2xl font-bold">{exercice.titre}</h1>
-        <p className="text-text-secondary mt-2 border-l-3 border-swiss-400 pl-3">{exercice.objectif}</p>
+        <h1 className="text-3xl font-black leading-tight">{exercice.titre}</h1>
+        <p className="text-lg text-text-secondary mt-3 border-l-4 border-swiss-400 pl-4 leading-relaxed">
+          {exercice.objectif}
+        </p>
 
-        <div className="flex gap-4 mt-4 text-sm text-text-secondary">
+        <div className="flex gap-6 mt-5 text-base text-text-secondary font-medium">
           <span>{exercice.duree} min</span>
           <span>{joueurs} joueurs</span>
         </div>
 
-        <div className="mt-6 text-sm leading-relaxed whitespace-pre-line">
+        <div className="mt-8 text-base leading-relaxed whitespace-pre-line">
           {exercice.description}
         </div>
 
         {exercice.variantes && exercice.variantes.length > 0 && (
-          <div className="mt-6">
-            <h2 className="font-display text-lg font-semibold mb-2">Variantes</h2>
-            <ul className="space-y-1 text-sm">
+          <div className="mt-8">
+            <h2 className="text-xl font-bold mb-3">Variantes</h2>
+            <ul className="space-y-2 text-base">
               {exercice.variantes.map((v, i) => (
                 <li key={i} className="flex gap-2">
-                  <span className="text-swiss-400 mt-1">•</span>
+                  <span className="text-swiss-400 mt-0.5">•</span>
                   <span>{v}</span>
                 </li>
               ))}
@@ -67,12 +69,12 @@ export default function ExerciceDetailPage() {
         )}
 
         {exercice.conseils && exercice.conseils.length > 0 && (
-          <div className="mt-6">
-            <h2 className="font-display text-lg font-semibold mb-2">Conseils</h2>
-            <ul className="space-y-1 text-sm">
+          <div className="mt-8">
+            <h2 className="text-xl font-bold mb-3">Conseils</h2>
+            <ul className="space-y-2 text-base">
               {exercice.conseils.map((c, i) => (
                 <li key={i} className="flex gap-2">
-                  <span className="text-swiss-400 mt-1">•</span>
+                  <span className="text-swiss-400 mt-0.5">•</span>
                   <span>{c}</span>
                 </li>
               ))}
@@ -81,7 +83,7 @@ export default function ExerciceDetailPage() {
         )}
 
         {exercice.tags.length > 0 && (
-          <div className="mt-6 pt-4 border-t border-gray-200 flex flex-wrap gap-2">
+          <div className="mt-8 pt-5 border-t border-gray-200 flex flex-wrap gap-2">
             {exercice.tags.map((t) => <Tag key={t} label={t} />)}
           </div>
         )}

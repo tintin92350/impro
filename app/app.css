@@ -1,8 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --font-display: "Fraunces", serif;
-  --font-body: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Roboto", ui-sans-serif, system-ui, sans-serif;
 
   --color-swiss-50: #FCEAEA;
   --color-swiss-100: #F8C5C7;
@@ -21,11 +20,8 @@
 }
 
 html {
-  font-family: var(--font-body);
+  font-family: var(--font-sans);
+  font-size: 17px;
   color: var(--color-text-primary);
   background-color: var(--color-page-bg);
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-display);
 }

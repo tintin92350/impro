@@ -16,11 +16,11 @@ export default function Tag({
       <button
         type="button"
         onClick={onClick}
-        className={`rounded-full px-3 py-1 text-xs font-medium ${style}`}
+        className={`rounded-full px-3.5 py-1.5 text-sm font-medium ${style}`}
       >
         {label}
       </button>
     );
   }
-  return <span className={`rounded-full px-3 py-1 text-xs font-medium ${style}`}>{label}</span>;
+  return <span className={`rounded-full px-3.5 py-1.5 text-sm font-medium ${style}`}>{label}</span>;
 }

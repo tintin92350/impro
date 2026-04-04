@@ -11,10 +11,10 @@ export default function ExerciceCard({ exercice }: { exercice: Exercice }) {
   return (
     <Link
       to={`/exercices/${exercice.id}`}
-      className="block bg-white rounded-xl p-4 border border-gray-200 active:bg-gray-50"
+      className="block bg-white rounded-2xl p-5 border border-gray-200 shadow-sm active:bg-gray-50"
     >
-      <div className="flex items-center gap-2 text-xs">
-        <span className={`rounded-full px-2 py-0.5 font-medium ${niveauColor[exercice.niveau] ?? "bg-gray-100 text-gray-600"}`}>
+      <div className="flex items-center gap-2 text-sm">
+        <span className={`rounded-full px-2.5 py-0.5 font-medium ${niveauColor[exercice.niveau] ?? "bg-gray-100 text-gray-600"}`}>
           {exercice.niveau}
         </span>
         <span className="text-text-secondary">{exercice.duree} min</span>
@@ -22,8 +22,8 @@ export default function ExerciceCard({ exercice }: { exercice: Exercice }) {
           {exercice.nombreJoueurs.min}{exercice.nombreJoueurs.max ? `–${exercice.nombreJoueurs.max}` : "+"} joueurs
         </span>
       </div>
-      <h3 className="font-display text-base font-semibold mt-2">{exercice.titre}</h3>
-      <p className="text-sm text-text-secondary mt-1 line-clamp-1">{exercice.objectif}</p>
+      <h3 className="text-lg font-bold mt-3">{exercice.titre}</h3>
+      <p className="text-base text-text-secondary mt-1.5 line-clamp-2 leading-relaxed">{exercice.objectif}</p>
     </Link>
   );
 }

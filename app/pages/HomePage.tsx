@@ -3,14 +3,14 @@ import { Link } from "react-router";
 export default function HomePage() {
   return (
     <div>
-      <div className="text-center py-8">
-        <h1 className="font-display text-3xl font-bold">Impro Suisse</h1>
-        <p className="text-text-secondary mt-2 text-sm">
+      <div className="text-center py-10">
+        <h1 className="text-4xl font-black tracking-tight">Impro Suisse</h1>
+        <p className="text-text-secondary mt-3 text-lg">
           Votre ressource pour l'improvisation théâtrale
         </p>
       </div>
 
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col gap-4">
         <NavCard to="/fiches" title="Fiches" desc="Concepts, techniques et règles" />
         <NavCard to="/exercices" title="Exercices" desc="Échauffements et scènes pour tous niveaux" />
         <NavCard to="/generateur" title="Générateur de thèmes" desc="Un thème au hasard pour votre prochaine scène" />
@@ -23,10 +23,10 @@ function NavCard({ to, title, desc }: { to: string; title: string; desc: string 
   return (
     <Link
       to={to}
-      className="block bg-white rounded-xl p-4 border border-gray-200 active:bg-gray-50"
+      className="block bg-white rounded-2xl p-5 border border-gray-200 shadow-sm active:bg-gray-50"
     >
-      <h2 className="font-display text-lg font-semibold">{title}</h2>
-      <p className="text-sm text-text-secondary mt-1">{desc}</p>
+      <h2 className="text-xl font-bold">{title}</h2>
+      <p className="text-base text-text-secondary mt-1.5 leading-relaxed">{desc}</p>
     </Link>
   );
 }

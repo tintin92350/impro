@@ -37,13 +37,13 @@ export default function ExercicesPage() {
     });
   }
 
-  if (loading) return <p className="text-center py-12 text-text-secondary">Chargement…</p>;
+  if (loading) return <p className="text-center py-12 text-text-secondary text-lg">Chargement…</p>;
 
   return (
     <div>
-      <h1 className="font-display text-2xl font-bold mb-4">Exercices</h1>
+      <h1 className="text-3xl font-black mb-5">Exercices</h1>
 
-      <div className="flex flex-col gap-3 mb-4">
+      <div className="flex flex-col gap-3 mb-5">
         <SearchBar value={query} onChange={setQuery} placeholder="Rechercher un exercice…" />
         <div className="flex flex-wrap gap-2">
           {NIVEAUX.map((n) => (
@@ -57,12 +57,12 @@ export default function ExercicesPage() {
         </div>
       </div>
 
-      <p className="text-xs text-text-secondary mb-3">{filtered.length} résultat{filtered.length !== 1 ? "s" : ""}</p>
+      <p className="text-sm text-text-secondary mb-4">{filtered.length} résultat{filtered.length !== 1 ? "s" : ""}</p>
 
       {filtered.length === 0 ? (
-        <p className="text-center py-8 text-text-secondary">Aucun exercice trouvé.</p>
+        <p className="text-center py-10 text-text-secondary text-lg">Aucun exercice trouvé.</p>
       ) : (
-        <div className="flex flex-col gap-3 sm:grid sm:grid-cols-2 lg:grid-cols-3">
+        <div className="flex flex-col gap-4 sm:grid sm:grid-cols-2 lg:grid-cols-3">
           {filtered.map((e) => <ExerciceCard key={e.id} exercice={e} />)}
         </div>
       )}
