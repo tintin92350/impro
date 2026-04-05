@@ -9,6 +9,7 @@ import {
 
 import type { Route } from "./+types/root";
 import { ContentProvider } from "~/hooks/ContentProvider";
+import InstallPrompt from "~/components/InstallPrompt";
 import "./app.css";
 
 export const links: Route.LinksFunction = () => [
@@ -54,6 +55,7 @@ export default function App() {
   return (
     <ContentProvider>
       <Outlet />
+      <InstallPrompt />
     </ContentProvider>
   );
 }
