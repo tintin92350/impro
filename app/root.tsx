@@ -29,8 +29,14 @@ export function Layout({ children }: { children: React.ReactNode }) {
     <html lang="fr">
       <head>
         <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
         <meta name="description" content="Votre ressource pour l'improvisation théâtrale en Suisse — fiches, exercices et générateur de thèmes." />
+        <meta name="theme-color" content="#E51E25" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="apple-mobile-web-app-title" content="Impro" />
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="apple-touch-icon" href="/icons/icon-192.svg" />
         <title>Impro Suisse</title>
         <Meta />
         <Links />
