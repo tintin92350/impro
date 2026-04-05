@@ -1,1 +1,2 @@
 - [Simple mobile-first design](feedback_simple_mobile.md) — Keep UI minimal, mobile-adapted, no heavy decorative effects
+- [Game-like feel](feedback_game_feel.md) — App should feel like a game, playful animations, big touch targets

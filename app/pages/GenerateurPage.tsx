@@ -1,5 +1,7 @@
 import { useState } from "react";
+import { motion } from "motion/react";
 import ThemeGenerator from "~/components/ThemeGenerator";
+import Tag from "~/components/Tag";
 
 const CATEGORIES = ["situation", "lieu", "emotion", "objet", "personnage", "phrase"] as const;
 
@@ -8,35 +10,31 @@ export default function GenerateurPage() {
 
   return (
     <div>
-      <h1 className="text-3xl font-black mb-5">Générateur de thèmes</h1>
+      <h1 className="text-3xl font-black mb-5">🎲 Générateur</h1>
 
-      <div className="flex flex-wrap gap-2 mb-4">
-        <button
-          type="button"
+      <div className="flex flex-wrap gap-2 mb-5">
+        <Tag
+          label="Toutes"
+          active={selected === null}
           onClick={() => setSelected(null)}
-          className={`rounded-full px-3.5 py-1.5 text-sm font-medium ${
-            selected === null ? "bg-swiss-400 text-white" : "bg-swiss-50 text-swiss-600"
-          }`}
-        >
-          Toutes
-        </button>
+        />
         {CATEGORIES.map((c) => (
-          <button
+          <Tag
             key={c}
-            type="button"
+            label={c}
+            active={selected === c}
             onClick={() => setSelected(selected === c ? null : c)}
-            className={`rounded-full px-3.5 py-1.5 text-sm font-medium capitalize ${
-              selected === c ? "bg-swiss-400 text-white" : "bg-swiss-50 text-swiss-600"
-            }`}
-          >
-            {c}
-          </button>
+          />
         ))}
       </div>
 
-      <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+      <motion.div
+        initial={{ opacity: 0, y: 12 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="bg-white rounded-3xl p-6 border border-gray-200/60 shadow-sm"
+      >
         <ThemeGenerator categorie={selected ?? undefined} />
-      </div>
+      </motion.div>
     </div>
   );
 }

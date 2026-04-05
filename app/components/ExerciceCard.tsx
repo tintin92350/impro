@@ -1,29 +1,35 @@
 import { Link } from "react-router";
+import { motion } from "motion/react";
 import type { Exercice } from "~/types/content";
 
-const niveauColor: Record<string, string> = {
-  débutant: "bg-green-100 text-green-700",
-  intermédiaire: "bg-amber-100 text-amber-700",
-  avancé: "bg-red-100 text-red-700",
+const niveauEmoji: Record<string, string> = {
+  débutant: "🟢",
+  intermédiaire: "🟡",
+  avancé: "🔴",
 };
 
-export default function ExerciceCard({ exercice }: { exercice: Exercice }) {
+export default function ExerciceCard({ exercice, index = 0 }: { exercice: Exercice; index?: number }) {
   return (
-    <Link
-      to={`/exercices/${exercice.id}`}
-      className="block bg-white rounded-2xl p-5 border border-gray-200 shadow-sm active:bg-gray-50"
+    <motion.div
+      initial={{ opacity: 0, y: 16 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: index * 0.04, duration: 0.3, ease: "easeOut" }}
     >
-      <div className="flex items-center gap-2 text-sm">
-        <span className={`rounded-full px-2.5 py-0.5 font-medium ${niveauColor[exercice.niveau] ?? "bg-gray-100 text-gray-600"}`}>
-          {exercice.niveau}
-        </span>
-        <span className="text-text-secondary">{exercice.duree} min</span>
-        <span className="text-text-secondary">
-          {exercice.nombreJoueurs.min}{exercice.nombreJoueurs.max ? `–${exercice.nombreJoueurs.max}` : "+"} joueurs
-        </span>
-      </div>
-      <h3 className="text-lg font-bold mt-3">{exercice.titre}</h3>
-      <p className="text-base text-text-secondary mt-1.5 line-clamp-2 leading-relaxed">{exercice.objectif}</p>
-    </Link>
+      <Link
+        to={`/exercices/${exercice.id}`}
+        className="block bg-white rounded-3xl p-5 border border-gray-200/60 shadow-sm active:scale-[0.97] transition-transform"
+      >
+        <div className="flex items-center gap-2 text-sm font-bold text-text-secondary">
+          <span>{niveauEmoji[exercice.niveau] ?? "⚪"} {exercice.niveau}</span>
+          <span>·</span>
+          <span>⏱ {exercice.duree} min</span>
+          <span>·</span>
+          <span>👥 {exercice.nombreJoueurs.min}{exercice.nombreJoueurs.max ? `–${exercice.nombreJoueurs.max}` : "+"}</span>
+        </div>
+        <h3 className="text-lg font-bold mt-2">{exercice.titre}</h3>
+        <p className="text-base text-text-secondary mt-1 line-clamp-2 leading-relaxed">{exercice.objectif}</p>
+        <span className="inline-block mt-3 text-sm font-bold text-swiss-400">Voir →</span>
+      </Link>
+    </motion.div>
   );
 }

@@ -1,3 +1,5 @@
+import { motion } from "motion/react";
+
 export default function Tag({
   label,
   active,
@@ -8,19 +10,20 @@ export default function Tag({
   onClick?: () => void;
 }) {
   const style = active
-    ? "bg-swiss-400 text-white"
-    : "bg-swiss-50 text-swiss-600";
+    ? "bg-swiss-400 text-white shadow-md"
+    : "bg-white text-swiss-600 border border-gray-200";
 
   if (onClick) {
     return (
-      <button
+      <motion.button
         type="button"
         onClick={onClick}
-        className={`rounded-full px-3.5 py-1.5 text-sm font-medium ${style}`}
+        whileTap={{ scale: 0.92 }}
+        className={`rounded-full px-4 py-2 text-sm font-bold ${style}`}
       >
         {label}
-      </button>
+      </motion.button>
     );
   }
-  return <span className={`rounded-full px-3.5 py-1.5 text-sm font-medium ${style}`}>{label}</span>;
+  return <span className={`rounded-full px-4 py-2 text-sm font-bold ${style}`}>{label}</span>;
 }

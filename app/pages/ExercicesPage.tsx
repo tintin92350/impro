@@ -37,17 +37,17 @@ export default function ExercicesPage() {
     });
   }
 
-  if (loading) return <p className="text-center py-12 text-text-secondary text-lg">Chargement…</p>;
+  if (loading) return <p className="text-center py-16 text-xl text-text-secondary">Chargement… ⏳</p>;
 
   return (
     <div>
-      <h1 className="text-3xl font-black mb-5">Exercices</h1>
+      <h1 className="text-3xl font-black mb-5">🎭 Exercices</h1>
 
       <div className="flex flex-col gap-3 mb-5">
         <SearchBar value={query} onChange={setQuery} placeholder="Rechercher un exercice…" />
         <div className="flex flex-wrap gap-2">
           {NIVEAUX.map((n) => (
-            <Tag key={n} label={n} active={niveau === n} onClick={() => toggle("niveau", n, niveau)} />
+            <Tag key={n} label={`${n === "débutant" ? "🟢" : n === "intermédiaire" ? "🟡" : "🔴"} ${n}`} active={niveau === n} onClick={() => toggle("niveau", n, niveau)} />
           ))}
         </div>
         <div className="flex flex-wrap gap-2">
@@ -57,13 +57,15 @@ export default function ExercicesPage() {
         </div>
       </div>
 
-      <p className="text-sm text-text-secondary mb-4">{filtered.length} résultat{filtered.length !== 1 ? "s" : ""}</p>
+      <p className="text-sm text-text-secondary font-medium mb-4">
+        {filtered.length} exercice{filtered.length !== 1 ? "s" : ""}
+      </p>
 
       {filtered.length === 0 ? (
-        <p className="text-center py-10 text-text-secondary text-lg">Aucun exercice trouvé.</p>
+        <p className="text-center py-12 text-lg text-text-secondary">Rien trouvé 🤷</p>
       ) : (
-        <div className="flex flex-col gap-4 sm:grid sm:grid-cols-2 lg:grid-cols-3">
-          {filtered.map((e) => <ExerciceCard key={e.id} exercice={e} />)}
+        <div className="flex flex-col gap-4 sm:grid sm:grid-cols-2">
+          {filtered.map((e, i) => <ExerciceCard key={e.id} exercice={e} index={i} />)}
         </div>
       )}
     </div>
